@@ -1,0 +1,133 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+.custom-header-pills {
+    .nav-pills {
+        .nav-item{
+            margin-right: 2px;
+        }
+      .nav-link {
+        border-radius: 0;
+        opacity: 0.7;
+        background-color: $skin7;
+        color: $theme-dark;
+        padding: 0.5rem 0.5rem;
+        &.active {
+          opacity: 1;
+          color: $white;
+          background-color: $gray-500;
+        }
+      }
+    }
+  }
+
+  .vq-box-card{
+    position: relative;
+    .vq-card-item-sale{
+        .custom-control{
+            padding-left: 0px!important;
+            width: 100%;
+        }
+        
+        .custom-control-label::after{
+            position: absolute;
+            top: -5px;
+            left: 190px;
+            display: none;
+            width: 1.5rem;
+            height: 1.5rem;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+        .custom-control-label{
+            &.active::after{
+                position: absolute;
+                top: -5px;
+                left: 190px;
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                content: "";
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+            }
+        }
+        .custom-control-label::before {
+            position: absolute;
+            top: -5px;
+            left: 190px;
+            display: none;
+            width: 1.5rem;
+            height: 1.5rem;
+            pointer-events: none;
+            content: "";
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: #dee2e6;
+            &.active{
+             display: block;
+            }
+        }
+        .custom-control-label {
+            &.active::before{
+             display: block;
+             position: absolute;
+             top: -5px;
+             left: 190px;
+             width: 1.5rem;
+             height: 1.5rem;
+             pointer-events: none;
+             content: "";
+             -webkit-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;
+            }
+        }
+        .custom-checkbox .custom-control-label::before{
+            border-radius: 50%;
+        }
+        
+        .custom-checkbox {
+            .custom-control-input ~ .custom-control-label.active{
+                &::before {
+                    @include gradient-bg($custom-control-indicator-checked-bg);
+                }
+                &::after {
+                    background-image: $custom-checkbox-indicator-icon-checked;
+                }
+                .border{
+                    border: 1px solid $themecolor-dark!important;
+                }
+            }
+        }  
+    }   
+    // .vq-question{
+    //     display: inline-block;
+    //     width: 20px;
+    //     height: 20px;
+    //     background-color: aqua;
+       
+    //     &:hover + .vq-history{
+    //         display: block!important;
+    //         &:hover{
+    //             display: block!important;
+    //         }
+    //     }
+    // }
+}
+.vq-v-middle{
+    vertical-align: middle!important;
+}
+
+.vq-v-middle{
+    .col-md-6, .col-sm-6{
+        vertical-align: middle!important;
+    }
+}
+.active-table {
+    background: #ffed0057 !important;
+  }

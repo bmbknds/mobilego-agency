@@ -1,0 +1,8 @@
+{
+  "DNSRoot": "http://34-200-91-36:3333/api",
+  "DNSRootLogin": "http://34-200-91-36:3333",
+  "SocketRoot": "ws://34-200-91-36:3333/api",
+  "horts": "localhost:3333",
+  "System": "http://system.mobilego.vn:2303/api",
+  "BORoot": "http://api.mobilego.vn/api"
+}
